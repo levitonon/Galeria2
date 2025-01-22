@@ -73,8 +73,8 @@ public class MainActivity extends AppCompatActivity {
 
         float w =
                 getResources().getDimension(R.dimen.itemWidth);
-        Util Utils = new Util();
-        int numberOfColumns = Utils.calculateNoOfColumns(MainActivity.this, w);
+
+        int numberOfColumns = Util.calculateNoOfColumns(MainActivity.this, w);
          GridLayoutManager gridLayoutManager = new GridLayoutManager(MainActivity.this, numberOfColumns);
          rvGallery.setLayoutManager(gridLayoutManager);
 
